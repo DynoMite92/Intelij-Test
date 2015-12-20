@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>cointrend Prototyp - default placeholder text gets cleared on click</title>
+    <meta name="Projekt" content="NOINDEX, NOFOLLOW" />
+    <!-- JAVASCRIPT to clear search text when the field is clicked -->
+    <script type="text/javascript">
+
+
+        window.onload = function(){
+            //Get submit button
+            var submitbutton = document.getElementById("tfq");
+            //Add listener to submit button
+            if(submitbutton.addEventListener){
+                submitbutton.addEventListener("click", function() {
+                    if (submitbutton.value == 'Suche hier'){//Customize this text string to whatever you want
+                        submitbutton.value = '';
+                    }
+                });
+            }
+        }
+    </script>
+
+    <img src="http://oi64.tinypic.com/344yycj.jpg" alt="Bild" width=400 height=200 align="left">
+
+    <img src="https://media.giphy.com/media/LukAHGCMfxMbK/giphy.gif" alt="Bild" width=200 height=200 align="right">
+    <img src="https://media.giphy.com/media/LukAHGCMfxMbK/giphy.gif" alt="Bild" width=200 height=200 align="right">
+
+
+    <style type="text/css">
+
+        #tfheader{
+            background-color:#E1DFDC;
+            border: solid 1px #E1DFDC; border-right:0px;
+
+        }
+
+        #tfnewsearch{
+            text-align:center;
+            vertical-align:middle;
+            padding:20px;
+            height:150px;
+        }
+        .tftextinput2{
+            margin: 0;
+            padding: 15px 25px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size:50px;
+            color:#666;
+            border:1px solid #0076a3; border-right:0px;
+            border-top-left-radius: 5px 5px;
+            border-bottom-left-radius: 5px 5px;
+        }
+        .tfbutton2 {
+            margin: 0;
+            padding: 15px 25px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size:50px;
+            font-weight:bold;
+            outline: none;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            color: #ffffff;
+            border: solid 1px #0076a3; border-right:0px;
+            background: #F8AC41;
+            border-top-right-radius: 5px 5px;
+            border-bottom-right-radius: 5px 5px;
+
+        }
+        .tfbutton2:hover {
+            text-decoration: none;
+            background: #A9231A;
+            background: -webkit-gradient(linear, left top, left bottom, from(#A9231A), to(#000000));
+            background: -moz-linear-gradient(top,  #A9231A,  #000000);
+        }
+        /* Fixes submit button height problem in Firefox */
+        .tfbutton2::-moz-focus-inner {
+            border: 0;
+        }
+        .tfclear{
+            clear:both;
+        }
+    </style>
+</head>
+<body bgcolor="#E1DFDC">
+<!-- HTML for SEARCH BAR -->
+<div id="tfheader">
+    <form id="tfnewsearch" method="get" action="http://www.google.com">
+        <input type="text" id="tfq" class="tftextinput2" name="q" size="15" maxlength="120" value="Suche hier"><input type="submit" value="Klick" class="tfbutton2">
+
+    </form>
+    <div class="tfclear"></div>
+</div>
+
+<div style="margin:0 auto;text-align:center">
+
+    <div style="margin-left:auto;margin-right:auto;text-align:center">
+        <img src="https://media4.giphy.com/media/3lMPABbl4xk7C/200.gif" width=400 height=400 align="left">
+        <img src="https://media4.giphy.com/media/3lMPABbl4xk7C/200.gif" width=400 height=400 align="right">
+    </div>
+
+</div>
+
+<table align="center" bgcolor="#ffffff" border="1"  cellpadding ="25">
+    <tr>
+        <th>Datum</th><th>Artikel</th><th>Rating</th>
+    </tr>
+    <tr>
+        <td>12.12.2015</td>
+        <td>
+            <a href="https://www.reddit.com/r/Bitcoin/comments/3wibws/help_unconfirmeddouble_spend_transaction_how_to/">
+                <div style="height:100%;width:100%">
+                    *HELP* unconfirmed/double spend transaction: how to solve it?
+                </div>
+            </a>
+        </td>
+        <td>15</td>
+    </tr>
+    <tr>
+        <td>11.12.2015</td>
+        <td>
+            <a href="https://www.cryptocoinsnews.com/eugene-kaspersky-cryptocurrencies-will-be-banned/">
+                <div style="height:100%;width:100%">
+                    Eugene Kaspersky: Cryptocurrencies Will Be Banned
+                </div>
+            </a>
+        </td>
+        <td>218</td>
+    </tr>
+    <tr>
+        <td>11.12.2015</td>
+        <td>
+            <a href="http://www.forbes.com/sites/laurashin/2015/12/11/should-you-invest-in-bitcoin-10-arguments-in-favor-as-of-december-2015/">
+             <div style="height:100%;width:100%">
+                 Should You Invest In Bitcoin?
+             </div>
+            </a>
+        </td>
+        <td>240</td>
+    </tr>
+
+    <tr>
+    <td>12.11.2015</td>
+    <td>
+        <a href="http://www.zerohedge.com/news/2015-12-11/bitcoin-breaks-out-higher-after-china-announces-crackdown-unionpay-pos-devices">
+            <div style="height:100%;width:100%">
+                Bitcoin Breaks Out Higher
+            </div>
+        </a>
+    </td>
+    <td>93</td>
+    </tr>
+</table>
+
+</body>
+</html>
